@@ -44,8 +44,6 @@ echo "your.mirror.server" > /etc/csf/downloadservers
 cd /tmp
 wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
 # Extract and run install.sh
-
-# Option 3: Use your distribution's package manager (when available)
 ```
 
 ### 2. Version Check Functionality
