@@ -42,7 +42,7 @@ echo "your.mirror.server" > /etc/csf/downloadservers
 
 # Option 2: Use manual updates from GitHub
 cd /tmp
-wget https://github.com/waytotheweb/scripts/archive/refs/heads/main.zip
+wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
 # Extract and run install.sh
 
 # Option 3: Use your distribution's package manager (when available)
@@ -117,7 +117,7 @@ Every source file updated with GPLv3 boilerplate:
    ```bash
    # Download from GitHub
    cd /tmp
-   wget https://github.com/waytotheweb/scripts/releases/download/v15.00/csf.tgz
+   wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
    tar -xzf csf.tgz
    cd csf
    sh install.sh
@@ -140,7 +140,7 @@ Simply clone and install:
 
 ```bash
 git clone https://github.com/waytotheweb/scripts.git
-cd scripts/code/csf
+cd scripts/csf
 sh install.sh
 ```
 
