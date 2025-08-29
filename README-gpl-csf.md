@@ -37,13 +37,13 @@ The built-in update mechanism that connected to ConfigServer's servers has been 
 **Migration Steps:**
 
 ```bash
-# Option 1: Configure custom download mirrors
-echo "your.mirror.server" > /etc/csf/downloadservers
-
-# Option 2: Use manual updates from GitHub
-cd /tmp
+# Use manual updates from GitHub
+cd /usr/src
 wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
-# Extract and run install.sh
+# Extract and run install
+tar -xzf csf.tgz
+cd csf
+sh install.sh
 ```
 
 ### 2. Version Check Functionality
@@ -107,14 +107,14 @@ Every source file updated with GPLv3 boilerplate:
 
    ```bash
    cp -R /etc/csf /etc/csf.backup
-   cp /usr/local/csf/version.txt /root/csf_version_backup.txt
+   cp /usr/local/csf/version.txt /usr/local/csf/version-backup.txt
    ```
 
 2. **Update CSF**
 
    ```bash
    # Download from GitHub
-   cd /tmp
+   cd /usr/src
    wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
    tar -xzf csf.tgz
    cd csf
@@ -129,18 +129,8 @@ Every source file updated with GPLv3 boilerplate:
    ```
 
 4. **Configure Update Source** (if desired)
-   - Set up your own mirror in `/etc/csf/downloadservers`
+   - Set up your own mirror in `/etc/csf/downloadservers`. Will need to restore CSF v15.00 disabled auto update routines and version checks first.
    - OR rely on manual updates from GitHub
-
-### For New Users
-
-Simply clone and install:
-
-```bash
-git clone https://github.com/waytotheweb/scripts.git
-cd scripts/csf
-sh install.sh
-```
 
 ---
 
