@@ -72,6 +72,18 @@ sh install.sh
 - **Attribution**: UI footers updated from "Way to the Web Limited" to "Jonathan Michaelson"
 
 ```diff
+diff --git a/csf/downloadservers b/csf/downloadservers
+index ef8376d..e7b430f 100644
+--- a/csf/downloadservers
++++ b/csf/downloadservers
+@@ -1,2 +1,2 @@
+-download.configserver.com
+-download2.configserver.com
++#download.configserver.com
++#download2.configserver.com
+```
+
+```diff
 diff --git a/csf/csget.pl b/csf/csget.pl
 index a3e8876..016ecb6 100755
 --- a/csf/csget.pl
