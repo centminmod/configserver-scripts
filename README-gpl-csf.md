@@ -112,6 +112,60 @@ index a3e8876..016ecb6 100755
  system("rm -f /var/lib/configserver/*.txt /var/lib/configserver/*error");
 ```
 
+```diff
+diff --git a/csf/ConfigServer/Config.pm b/csf/ConfigServer/Config.pm
+index f854b29..f7a4648 100644
+--- a/csf/ConfigServer/Config.pm
++++ b/csf/ConfigServer/Config.pm
+@@ -1,7 +1,20 @@
+ ###############################################################################
+-# Copyright 2006-2023, Way to the Web Limited
+-# URL: http://www.configserver.com
+-# Email: sales@waytotheweb.com
++# Copyright (C) 2006-2025 Jonathan Michaelson
++#
++# https://github.com/waytotheweb/scripts
++#
++# This program is free software; you can redistribute it and/or modify it under
++# the terms of the GNU General Public License as published by the Free Software
++# Foundation; either version 3 of the License, or (at your option) any later
++# version.
++#
++# This program is distributed in the hope that it will be useful, but WITHOUT
++# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
++# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
++# details.
++#
++# You should have received a copy of the GNU General Public License along with
++# this program; if not, see <https://www.gnu.org/licenses>.
+ ###############################################################################
+ ## no critic (RequireUseWarnings, ProhibitExplicitReturnUndef, ProhibitMixedBooleanOperators, RequireBriefOpen)
+ # start main
+@@ -429,21 +442,13 @@ sub getdownloadserver {
+  my $downloadservers = "/etc/csf/downloadservers";
+  my $chosen;
+  if (-e $downloadservers) {
+-##  open (my $DOWNLOAD, "<", $downloadservers);
+-##  flock ($DOWNLOAD, LOCK_SH);
+-##  my @data = <$DOWNLOAD>;
+-##  close ($DOWNLOAD);
+-##  chomp @data;
+-##  foreach my $line (@data) {
+-##   if ($line =~ /^download/) {push @servers, $line}
+-##  }
+   foreach my $line (slurp($downloadservers)) {
+    $line =~ s/$cleanreg//g;
+    if ($line =~ /^download/) {push @servers, $line}
+   }
+   $chosen = $servers[rand @servers];
+  }
+- if ($chosen eq "") {$chosen = "download.configserver.com"}
++## if ($chosen eq "") {$chosen = "download.configserver.com"}
+  return $chosen;
+ }
+ ## end getdownloadserver
+```
+
 #### License Headers (All Files)
 
 Every source file updated with GPLv3 boilerplate:
