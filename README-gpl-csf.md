@@ -211,33 +211,11 @@ cp /usr/local/csf/version.txt /usr/local/csf/version-backup.txt
 # Use manual updates from GitHub
 cd /usr/src
 wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
-# Extract and run install.sh or one of control panel installers
+# Extract and run install.sh
 tar -xzf csf.tgz
 cd csf
 sh install.sh
 ```
-
-If you run one of the below control panels, you may want to use the specific installer instead of `install.sh`:
-
-```bash
-sh install.cpanel.sh       # cPanel/WHM
-sh install.directadmin.sh  # DirectAdmin
-sh install.interworx.sh    # InterWorx
-sh install.cwp.sh          # CentOS Web Panel
-sh install.cyberpanel.sh   # CyberPanel
-sh install.vesta.sh        # VestaCP
-```
-
-| Installer | Type | Target Platform | Lines | Complexity | Unique Feature |
-|-----------|------|----------------|-------|------------|----------------|
-| `install.sh` | Dispatcher | Auto-detection | 54 | Simple | Platform detection & delegation |
-| `install.generic.sh` | Standalone | No control panel | 540 | Moderate | Clean baseline installation |
-| `install.cpanel.sh` | Integration | cPanel/WHM | 580+ | Very High | WHM plugin, AppConfig, Perl path switching |
-| `install.directadmin.sh` | Integration | DirectAdmin | 535+ | High | **C binary compilation**, SetUID helper |
-| `install.interworx.sh` | Integration | InterWorx | 550+ | High | PHP controller modification, nodeworx.pex |
-| `install.cwp.sh` | Integration | CentOS Web Panel | 555+ | Moderate | PHP modules, AJAX handlers |
-| `install.cyberpanel.sh` | Integration | CyberPanel | 550+ | High | **Django app integration**, settings.py mods |
-| `install.vesta.sh` | Integration | VestaCP | 535+ | Low | Simple web interface |
 
 3. **Verify Installation**
 
