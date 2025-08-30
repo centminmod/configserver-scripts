@@ -71,6 +71,47 @@ sh install.sh
 - **Version Checking**: `csget.pl` modified to prevent automatic version checks
 - **Attribution**: UI footers updated from "Way to the Web Limited" to "Jonathan Michaelson"
 
+```diff
+diff --git a/code/csf/csget.pl b/code/csf/csget.pl
+index a3e8876..016ecb6 100755
+--- a/code/csf/csget.pl
++++ b/code/csf/csget.pl
+@@ -1,8 +1,21 @@
+ #!/usr/bin/perl
+ ###############################################################################
+-# Copyright 2006-2023, Way to the Web Limited
+-# URL: http://www.configserver.com
+-# Email: sales@waytotheweb.com
++# Copyright (C) 2006-2025 Jonathan Michaelson
++#
++# https://github.com/waytotheweb/scripts
++#
++# This program is free software; you can redistribute it and/or modify it under
++# the terms of the GNU General Public License as published by the Free Software
++# Foundation; either version 3 of the License, or (at your option) any later
++# version.
++#
++# This program is distributed in the hope that it will be useful, but WITHOUT
++# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
++# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
++# details.
++#
++# You should have received a copy of the GNU General Public License along with
++# this program; if not, see <https://www.gnu.org/licenses>.
+ ###############################################################################
+ use strict;
+ use warnings;
+@@ -25,7 +38,7 @@
+ 
+ $0 = "ConfigServer Version Check";
+ 
+-my @downloadservers = ("https://download.configserver.com", "https://download2.configserver.com");
++my @downloadservers = ""; # ("https://download.configserver.com", "https://download2.configserver.com");
+ 
+ system("mkdir -p /var/lib/configserver/");
+ system("rm -f /var/lib/configserver/*.txt /var/lib/configserver/*error");
+```
+
 #### License Headers (All Files)
 
 Every source file updated with GPLv3 boilerplate:
