@@ -230,14 +230,14 @@ AUTO_UPDATES = "0"
 
 4. **Verify Installation**
 
-   ```bash
-   csf -v  # Should show v15.00
-   csf -r  # Restart CSF
-   ```
+```bash
+csf -v  # Should show v15.00
+csf -r  # Restart CSF
+```
 
 5. **Configure Update Source** (if desired)
-   - Set up your own mirror in `/etc/csf/downloadservers`. Will need to restore CSF v15.00 disabled auto update routines and version checks first.
-   - OR rely on manual updates from GitHub
+- Set up your own mirror in `/etc/csf/downloadservers`. Will need to restore CSF v15.00 disabled auto update routines and version checks first.
+- OR rely on manual updates from GitHub
 
 ---
 
