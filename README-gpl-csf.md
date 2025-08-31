@@ -217,14 +217,25 @@ cd csf
 sh install.sh
 ```
 
-3. **Verify Installation**
+3. Disable Auto Updates
+
+In `/etc/csf/csf.conf` disable auto updates variable setting it to `0`. CSF v15.00 disabled auto update and version check in code, but `AUTO_UPDATES` if enabled, will still try to auto update - leading to download error which is just cosmetic and won't impact CSF Firewall operations.
+
+```bash
+# Enabling auto updates creates a cron job called /etc/cron.d/csf_update which
+# runs once per day to see if there is an update to csf+lfd and upgrades if
+# available and restarts csf and lfd
+AUTO_UPDATES = "0"
+```
+
+4. **Verify Installation**
 
    ```bash
    csf -v  # Should show v15.00
    csf -r  # Restart CSF
    ```
 
-4. **Configure Update Source** (if desired)
+5. **Configure Update Source** (if desired)
    - Set up your own mirror in `/etc/csf/downloadservers`. Will need to restore CSF v15.00 disabled auto update routines and version checks first.
    - OR rely on manual updates from GitHub
 
