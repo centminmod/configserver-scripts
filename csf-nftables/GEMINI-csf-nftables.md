@@ -1,3 +1,7 @@
+**THIS DOCUMENT CONTAINS AI-GENERATED CONTENT THAT IS NOT VERIFIED, NOT TESTED, AND MAY CONTAIN SIGNIFICANT INACCURACIES OR COMPLETE FABRICATIONS (HALLUCINATIONS).**
+
+These documents were generated out of curiosity by asking different AI models what it would theoretically take to update CSF (ConfigServer Security & Firewall) to support nftables. They are **NOT** official documentation, **NOT** tested implementations, and **NOT** endorsed by any CSF developers or maintainers.
+
 # CSF nftables Support Implementation Plan (Comprehensive)
 ## For AlmaLinux/Rocky/RHEL 10 and Beyond
 

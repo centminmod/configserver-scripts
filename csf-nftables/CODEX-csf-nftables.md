@@ -1,3 +1,7 @@
+**THIS DOCUMENT CONTAINS AI-GENERATED CONTENT THAT IS NOT VERIFIED, NOT TESTED, AND MAY CONTAIN SIGNIFICANT INACCURACIES OR COMPLETE FABRICATIONS (HALLUCINATIONS).**
+
+These documents were generated out of curiosity by asking different AI models what it would theoretically take to update CSF (ConfigServer Security & Firewall) to support nftables. They are **NOT** official documentation, **NOT** tested implementations, and **NOT** endorsed by any CSF developers or maintainers.
+
 CSF nftables Enablement Plan for AlmaLinux/Rocky/RHEL 10
 
 Objective: Add an optional nftables backend to CSF that preserves current behavior on iptables-based systems while enabling full functionality on nft-only EL10 (AlmaLinux 10, Rocky 10, RHEL 10) systems.

@@ -325,3 +325,8 @@ csf -r  # Restart CSF
 | UI | ✅ Working | Attribution text updated |
 | Panel Integration | ✅ Working | All panels supported |
 | Configuration | ✅ Compatible | No changes needed |
+
+
+## CSF Firewall nftables support
+
+CSF Firewall v15.00 GPLv3 doesn't fully support nftables. Asked AI what it would take to add support and they provided their responses [here](https://github.com/centminmod/configserver-scripts/tree/main/csf-nftables).
