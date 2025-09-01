@@ -12,6 +12,8 @@ For uninstallation of any of our scripts, go to the [uninstallers](uninstallers)
 
 Note, after August 31, 2025 the site http://configserver.com and download site <https://download.configserver.com>will no longer work. Below notice was taken from https://configserver.com/announcement/. Free scripts open sourced under GPLv3 licensing are now at https://github.com/waytotheweb/scripts and in this forked repo https://github.com/centminmod/configserver-scripts.
 
+For CSF Firewall v15.00 GPLv3 updates read https://github.com/centminmod/configserver-scripts/blob/main/README-gpl-csf.md
+
 ### Important Notice
 
 Way to the Web Ltd and [Configserver.com](http://configserver.com) will be closing down permanently on **31 August 2025**. The server software market has changed drastically in the more than 25 years since our company began, and we now find the business is no longer profitable so must come to an end.
