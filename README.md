@@ -1,5 +1,7 @@
 # Way to the Web Limited Scripts
 
+This repo is a fork of the official repo at https://github.com/waytotheweb/scripts. To see differences between this fork and official repo, please check out the link [here](https://github.com/waytotheweb/scripts/compare/main...centminmod:configserver-scripts:main).
+
 ## All files within this repository are subject to the [GPL license](LICENSE.txt) as outlined in [COPYING.md](COPYING.md)
 
 These are the final copies of the scripts.
