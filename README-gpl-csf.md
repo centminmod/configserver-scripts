@@ -330,3 +330,7 @@ csf -r  # Restart CSF
 ## CSF Firewall nftables support
 
 CSF Firewall v15.00 GPLv3 doesn't fully support nftables. Asked AI what it would take to add support and they provided their responses [here](https://github.com/centminmod/configserver-scripts/tree/main/csf-nftables).
+
+## CSF Firewall Current Community Sentiment, Discussions & Alternatives
+
+On September 4, 2025, asked AI to research current community sentiment, discussions and alternative for CSF Firewall and they provided their responses [here](https://github.com/centminmod/configserver-scripts/tree/main/csf-shutdown-sentiment-alternatives)
