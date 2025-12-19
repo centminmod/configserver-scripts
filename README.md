@@ -1,5 +1,15 @@
 # Way to the Web Limited Scripts
 
+Update: December 20, 2025
+
+- To clarify this repo is forked from original and official ConfigServer GitHub repo which released the open source GPL-v3 versions at <https://github.com/waytotheweb/scripts>. This repo's link to the following files are the original unaltered ConfigServer `.tgz` files at:
+
+- [csf.tgz](csf.tgz) - this is CSF Firewall GPLv3 open source release version v15.00 and details, changes and migration/download guide are outlined in [README-gpl-csf.md](README-gpl-csf.md). Jump to migration guide [here](README-gpl-csf.md#-migration-guide).
+* [cmc.tgz](cmc.tgz)
+* [cmm.tgz](cmm.tgz)
+* [cmq.tgz](cmq.tgz)
+* [cse.tgz](cse.tgz)
+
 Update: December 19, 2025
 
 - The official repo at <https://github.com/waytotheweb/scripts> no longer exists. You can use this forked repo instead  <https://github.com/centminmod/configserver-scripts> which is forked from <https://github.com/waytotheweb/scripts>. GitHub incorrectly says this repo is forked from `mappy9211` repo version - it is **NOT** forked from `mappy9211` repo version. You can inspect this forked repo's commit history at <https://github.com/centminmod/configserver-scripts/commits/main/>.
