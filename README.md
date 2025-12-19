@@ -1,5 +1,12 @@
 # Way to the Web Limited Scripts
 
+Update: December 19, 2025
+
+- The official repo at https://github.com/waytotheweb/scripts no longer exists. You can use this forked repo instead (bookmark https://github.com/centminmod/configserver-scripts). You can inspect this forked repo's commit history at https://github.com/centminmod/configserver-scripts/commits/main/.
+- The official CSF Firewall GPLv3 open source release version is v15.00 and details, changes and migration/download guide are outlined in [README-gpl-csf.md](README-gpl-csf.md). Jump to migration guide [here](README-gpl-csf.md#-migration-guide).
+
+---
+
 This repo is a fork of the official repo at https://github.com/waytotheweb/scripts. To see differences between this fork and official repo, please check out the link [here](https://github.com/waytotheweb/scripts/compare/main...centminmod:configserver-scripts:main).
 
 ## All files within this repository are subject to the [GPL license](LICENSE.txt) as outlined in [COPYING.md](COPYING.md)

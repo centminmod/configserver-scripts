@@ -210,7 +210,7 @@ cp /usr/local/csf/version.txt /usr/local/csf/version-backup.txt
 ```bash
 # Use manual updates from GitHub
 cd /usr/src
-wget https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz
+wget https://github.com/centminmod/configserver-scripts/raw/refs/heads/main/csf.tgz
 # Extract and run install.sh
 tar -xzf csf.tgz
 cd csf
