@@ -4,7 +4,7 @@ Update: December 20, 2025
 
 To clarify this repo is forked from original and official ConfigServer GitHub repo which released the open source GPL-v3 versions at <https://github.com/waytotheweb/scripts>. This repo's link to the following files are the original unaltered ConfigServer `.tgz` files at:
 
-* [csf.tgz](csf.tgz) - this is CSF Firewall GPLv3 open source release version v15.00 and details, changes and migration/download guide are outlined in [README-gpl-csf.md](README-gpl-csf.md). Jump to migration guide [here](README-gpl-csf.md#-migration-guide).
+* [csf.tgz](csf.tgz) - this is CSF Firewall GPLv3 open source release version v15.00 and details, changes and migration/download guide are outlined in [README-gpl-csf.md](README-gpl-csf.md). Jump to migration guide [here](README-gpl-csf.md#-migration-guide). See commit history for the file at <https://github.com/centminmod/configserver-scripts/commits/main/csf.tgz>.
 * [cmc.tgz](cmc.tgz)
 * [cmm.tgz](cmm.tgz)
 * [cmq.tgz](cmq.tgz)
